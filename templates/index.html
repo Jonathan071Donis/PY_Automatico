@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Mensajes de WhatsApp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Enviar Mensajes de WhatsApp</h1>
+        <form method="POST">
+            <label for="numero">Número (incluye el código de país):</label>
+            <input type="text" name="numero" id="numero" placeholder="+1234567890" required>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+            <br>
+            <label for="veces">¿Cuántas veces enviar?</label>
+            <input type="number" name="veces" id="veces" min="1" required>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

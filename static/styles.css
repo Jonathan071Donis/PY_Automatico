@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Color de fondo más suave */
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px; /* Más espacio interno */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+h1 {
+    text-align: center;
+    color: #343a40; /* Color más oscuro para el título */
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px; /* Más espacio entre las etiquetas y los inputs */
+    color: #495057; /* Color más oscuro para las etiquetas */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px; /* Espaciado interno aumentado */
+    margin-bottom: 15px; /* Más espacio entre inputs */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efecto 3D */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    outline: none; /* Sin contorno en el foco */
+    box-shadow: 0 0 10px rgba(0, 128, 255, 0.5); /* Efecto de foco */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #28a745, #218838); /* Gradiente para el botón */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente más grande */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+    transition: background 0.3s ease, transform 0.2s ease; /* Transición suave */
+}
+
+button:hover {
+    background: #218838; /* Color más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+button:active {
+    transform: translateY(0); /* Restablecer efecto al hacer clic */
+}
